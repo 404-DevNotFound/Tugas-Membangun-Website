@@ -3,11 +3,27 @@
   <head>
     <title>Form Login</title>
   </head>
-  <body>
-    <fieldset>
-      <legend>Form Login</legend>
-      <form>
-        <label for="uname">Username:</label>
+  <body style="font-family: Arial, Helvetica, sans-serif">
+    <h1 style="text-align: center">Silahkan Login terlebih dahulu</h1>
+    <fieldset style="width: 25%; margin: auto; background-color: bisque">
+      <legend style="font-size: 1.5rem; font-weight: bold; text-align: center">
+        Form Login
+      </legend>
+      <img
+        src="source/akun.png"
+        style="
+          width: 50%;
+          display: block;
+          margin-top: 15px;
+          margin-left: auto;
+          margin-right: auto;
+        "
+      />
+      <form
+        style="display: flex; justify-content: center; flex-direction: column"
+      >
+        <label for="uname" style="margin: 15px 0 15px">Username:</label>
+
         <input
           type="text"
           name="uname"
@@ -15,25 +31,36 @@
           required
         />
 
-        <br /><br />
+        <label for="psw" style="margin: 15px 0 15px">Password:</label>
 
-        <label for="psw">Password:</label>
         <input
           type="password"
           name="psw"
           placeholder="Masukkan password"
           required
+          style="margin-bottom: 15px"
         />
 
-        <br /><br />
-
-        <button type="submit">Login</button>
+        <button
+          type="submit"
+          style="
+            cursor: pointer;
+            background-color: lightblue;
+            border: none;
+            padding: 10px;
+            font-weight: bold;
+            color: white;
+            border-radius: 5px;
+          "
+        >
+          Login
+        </button>
       </form>
 
-      <p>Belum punya akun?</p>
-      <a href="formregister.html">
-        <button type="button">Register</button>
-      </a>
+      <p>
+        Belum punya akun?
+        <a href="formregister.html"> Daftar sekarang </a>
+      </p>
     </fieldset>
   </body>
 </html>

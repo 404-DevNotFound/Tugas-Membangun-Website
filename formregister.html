@@ -3,11 +3,15 @@
   <head>
     <title>Form Register</title>
   </head>
-  <body>
-    <fieldset>
-      <legend>Form login</legend>
-      <form>
-        <label for="uname">Username: </label>
+  <body style="font-family: Arial, Helvetica, sans-serif">
+    <fieldset style="width: 25%; margin: auto; background-color: bisque">
+      <legend style="font-size: 1.5rem; font-weight: bold; text-align: center">
+        Form Register
+      </legend>
+      <form
+        style="display: flex; justify-content: center; flex-direction: column"
+      >
+        <label for="uname" style="margin: 15px 0 15px">Username: </label>
         <input
           type="text"
           placeholder="Masukkan username"
@@ -15,9 +19,7 @@
           required
         />
 
-        <br /><br />
-
-        <label for="psw">Password: </label>
+        <label for="psw" style="margin: 15px 0 15px">Password: </label>
         <input
           type="password"
           placeholder="Masukkan password"
@@ -25,9 +27,21 @@
           required
         />
 
-        <br /><br />
-
-        <button type="submit">Buat akun</button>
+        <button
+          type="submit"
+          style="
+            cursor: pointer;
+            background-color: lightblue;
+            border: none;
+            margin-top: 15px;
+            padding: 10px;
+            font-weight: bold;
+            color: white;
+            border-radius: 5px;
+          "
+        >
+          Buat akun
+        </button>
       </form>
     </fieldset>
   </body>
