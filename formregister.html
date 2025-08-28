@@ -3,48 +3,115 @@
   <head>
     <title>Form Register</title>
   </head>
-  <body style="font-family: Arial, Helvetica, sans-serif; margin-top: 50px">
-    <fieldset style="width: 25%; margin: auto; background-color: bisque">
-      <legend style="font-size: 1.5rem; font-weight: bold; text-align: center">
+  <body
+    style="
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f2f4f7;
+      margin: 0;
+      padding: 0;
+    "
+  >
+    <h1 style="text-align: center; margin-top: 40px; color: #2c3e50">
+      Silahkan Buat Akun Baru
+    </h1>
+
+    <fieldset
+      style="
+        width: 350px;
+        margin: 30px auto;
+        background-color: #fff;
+        border: 2px solid #ddd;
+        border-radius: 12px;
+        padding: 20px 30px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      "
+    >
+      <legend
+        style="
+          font-size: 1.5rem;
+          font-weight: bold;
+          text-align: center;
+          color: #3498db;
+        "
+      >
         Form Register
       </legend>
-      <form
-        style="display: flex; justify-content: center; flex-direction: column"
-      >
-        <label for="uname" style="margin: 15px 0 15px">Username: </label>
+
+      <form style="display: flex; flex-direction: column" action="index.html">
+        <label
+          for="uname"
+          style="margin: 10px 0 5px; font-weight: bold; color: #333"
+          >Username:</label
+        >
         <input
           type="text"
           placeholder="Masukkan username"
           name="uname"
           required
+          style="
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+          "
         />
 
-        <label for="psw" style="margin: 15px 0 15px">Password: </label>
+        <label
+          for="psw"
+          style="margin: 15px 0 5px; font-weight: bold; color: #333"
+          >Password:</label
+        >
         <input
           type="password"
           placeholder="Masukkan password"
           name="psw"
           required
+          style="
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+          "
         />
 
-        <button
-          type="submit"
-          style="
-            cursor: pointer;
-            background-color: lightblue;
-            border: none;
-            margin-top: 15px;
-            padding: 10px;
-            font-weight: bold;
-            color: white;
-            border-radius: 5px;
-          "
-        >
-          <a href="index.html" style="text-decoration: none; color: white"
-            >buat akun
-          </a>
-        </button>
+        <a
+          href="index.html"
+          style="text-decoration: none; color: white; display: block"
+          ><button
+            type="submit"
+            style="
+              cursor: pointer;
+              background-color: #3498db;
+              border: none;
+              padding: 12px;
+              font-weight: bold;
+              color: white;
+              border-radius: 6px;
+              margin-top: 20px;
+              font-size: 16px;
+            "
+          >
+            Buat Akun
+          </button>
+        </a>
       </form>
+
+      <p
+        style="
+          text-align: center;
+          margin-top: 20px;
+          font-size: 14px;
+          color: #555;
+        "
+      >
+        Sudah punya akun?
+        <a
+          href="index.html"
+          style="color: #3498db; text-decoration: none; font-weight: bold"
+        >
+          Login di sini
+        </a>
+      </p>
     </fieldset>
   </body>
 </html>
