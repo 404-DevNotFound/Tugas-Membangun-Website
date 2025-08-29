@@ -8,113 +8,114 @@
 </head>
 
 <body
-    style="margin: 0px; padding: 24px; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+    style="margin: 0px; padding: 24px; display: flex; justify-content: center; align-items: center; flex-direction: column; background-color: #f9f9f9; font-family: Arial, Helvetica, sans-serif; color: #2c3e50">
     <div>
         <center>
-            <h1 style="margin: 0px; font-family: Arial, Helvetica, sans-serif;">Pendaftaran Ujian
-                Seleksi Perguruan Tinggi</h1>
+            <h1 style="margin: 0px 0px 10px 0px;">Pendaftaran Ujian Seleksi Perguruan Tinggi</h1>
         </center>
     </div>
-    <form style="display: flex; flex-direction: column;" action="home.html" method="POST">
+    <form style="display: flex; flex-direction: column;" action="form_submitted.html" method="GET">
         <div
-            style="display: flex; flex-direction: column; background-color: rgb(250, 250, 250); width: 80vw; max-width: 1080px; padding: 16px 24px; margin: 24px 0px; border: 1px solid lightgray; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);">
-            <h2 style="margin: 4px 0px 12px 0px; font-family: Arial, Helvetica, sans-serif;">Biodata Pribadi</h2>
-            <hr style="margin: 0px 0px 4px 0px; border: 0.5px solid lightgray;" />
+            style="display: flex; flex-direction: column; background-color: rgb(250, 250, 250); width: 80vw; max-width: 1080px; padding: 16px 24px; margin: 14px 0px; border: 1px solid lightgray; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);">
+            <h2 style="margin: 4px 0px 12px 0px;">Biodata Pribadi</h2>
+            <hr style="margin: 0px 0px 4px 0px; border: 2px solid #3498db; border-radius: 10px;" />
             <div style="margin: 4px 0px;">
                 <div style="display: flex; flex-wrap: wrap;">
                     <div style="display: flex; flex-direction: column; width: 240px; margin: 8px 24px 8px 0px;">
-                        <label style="font-family: Arial, Helvetica, sans-serif; margin: 0px 0px 8px 0px;"
-                            for="nama">Nama
-                            Lengkap</label>
+                        <label style="height: 26px;" for="nama">Nama Lengkap</label>
                         <input
-                            style="border: 1px solid slategray; border-radius: 4px; height: 26px; padding: 4px 8px; font-size: 16px; font-family: Arial, Helvetica, sans-serif;"
+                            style="border: 1px solid slategray; border-radius: 4px; height: 26px; padding: 4px 8px; font-size: 16px; "
                             type="text" name="nama" required />
                     </div>
 
                     <div style="display: flex; flex-direction: column; width: 240px; margin: 8px 24px 8px 0px;">
-                        <label style="font-family: Arial, Helvetica, sans-serif; margin: 0px 0px 8px 0px;"
-                            for="nik">NIK</label>
+                        <label style="height: 26px;" for="nik">NIK</label>
                         <input
-                            style="border: 1px solid slategray; border-radius: 4px; min-height: 20px; min-width: 220px; padding: 6px 10px; font-size: 16px; font-family: Arial, Helvetica, sans-serif;"
+                            style="border: 1px solid slategray; border-radius: 4px; min-height: 20px; min-width: 220px; padding: 6px 10px; font-size: 16px; "
                             type="text" name="nik" required />
                     </div>
 
                     <div style="display: flex; flex-direction: column; width: 240px; margin: 8px 24px 8px 0px;">
-                        <label style="font-family: Arial, Helvetica, sans-serif; margin: 0px 0px 8px 0px;"
-                            for="nisn">NISN</label>
+                        <label style="height: 26px;" for="nisn">NISN</label>
                         <input
-                            style="border: 1px solid slategray; border-radius: 4px; min-height: 20px; min-width: 220px; padding: 6px 10px; font-size: 16px; font-family: Arial, Helvetica, sans-serif;"
+                            style="border: 1px solid slategray; border-radius: 4px; min-height: 20px; min-width: 220px; padding: 6px 10px; font-size: 16px; "
                             type="text" name="nisn" required />
                     </div>
 
                     <div style="display: flex; flex-direction: column; width: 240px; margin: 8px 24px 8px 0px">
-                        <label style="font-family: Arial, Helvetica, sans-serif; margin: 0px 0px 8px 0px;"
-                            for="tempat_lahir">Tempat Lahir</label>
+                        <label style="height: 26px;" for="tempat_lahir">Tempat Lahir</label>
                         <input
-                            style="border: 1px solid slategray; border-radius: 4px; min-height: 20px; min-width: 220px; padding: 6px 10px; font-size: 16px; font-family: Arial, Helvetica, sans-serif;"
+                            style="border: 1px solid slategray; border-radius: 4px; min-height: 20px; min-width: 220px; padding: 6px 10px; font-size: 16px; "
                             type="text" name="tempat_lahir" required />
                     </div>
 
                     <div style="display: flex; flex-direction: column; width: 240px; margin: 8px 24px 8px 0px">
-                        <label style="font-family: Arial, Helvetica, sans-serif; margin: 0px 0px 8px 0px;"
-                            for="tanggal_lahir">Tanggal Lahir</label>
+                        <label style="height: 26px;" for="tanggal_lahir">Tanggal Lahir</label>
                         <input
-                            style="border: 1px solid slategray; border-radius: 4px; min-height: 20px; min-width: 220px; padding: 6px 10px; font-size: 16px; font-family: Arial, Helvetica, sans-serif;"
+                            style="border: 1px solid slategray; border-radius: 4px; min-height: 20px; min-width: 220px; padding: 6px 10px; font-size: 16px; "
                             type="date" name="tanggal_lahir" required />
                     </div>
 
                     <div style="display: flex; flex-direction: column; width: 240px; margin: 8px 24px 8px 0px">
-                        <label style="font-family: Arial, Helvetica, sans-serif; margin: 0px 0px 8px 0px;"
-                            for="jenis_kelamin">Jenis Kelamin</label>
-                        <select
-                            style="border: 1px solid slategray; border-radius: 4px; min-height: 20px; min-width: 220px; padding: 6px 10px; font-size: 16px; font-family: Arial, Helvetica, sans-serif;"
-                            name="jenis_kelamin" required>
-                            <option value="" disabled hidden selected>-</option>
-                            <option value="laki-laki">Laki-laki</option>
-                            <option value="perempuan">Perempuan</option>
-                        </select>
+                        <label style="height: 26px;" for="jenis_kelamin">Jenis Kelamin</label>
+                        <div style="display: flex; align-items: center; margin: auto 0px; gap: 24px;">
+                            <div style="display: flex; gap: 8px;">
+                                <label for="jenis_kelamin">Laki-laki</label>
+                                <input style="margin: 0px;" type="radio" name="jenis_kelamin"
+                                    value="laki_laki" required />
+                            </div>
+                            <div style="display: flex; gap: 8px;">
+                                <label for="jenis_kelamin">Perempuan</label>
+                                <input style="margin: 0px;" type="radio" name="jenis_kelamin"
+                                    value="perempuan" required />
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div style="display: flex; flex-wrap: wrap;">
                     <div style="display: flex; flex-direction: column; width: 240px; margin: 8px 24px 8px 0px">
-                        <label style="font-family: Arial, Helvetica, sans-serif; margin: 0px 0px 8px 0px;"
-                            for="alamat">Alamat</label>
+                        <label style="height: 26px;" for="alamat">Alamat</label>
                         <textarea
-                            style="resize: vertical; border: 1px solid slategray; border-radius: 4px; min-height: 20px; width: 360px; padding: 6px 10px; font-size: 16px; font-family: Arial, Helvetica, sans-serif;"
+                            style="resize: vertical; border: 1px solid slategray; border-radius: 4px; min-height: 20px; width: 360px; padding: 6px 10px; font-size: 16px; "
                             name="alamat" required></textarea>
+                    </div>
+                </div>
+
+                <div style="display: flex; flex-wrap: wrap;">
+                    <div style="display: flex; flex-direction: column; width: 240px; margin: 8px 24px 8px 0px">
+                        <label style="height: 26px;" for="pasfoto">Pas Foto</label>
+                        <input style="margin: 0px;" type="file" name="pasfoto" value="perempuan" accept="image/*"
+                            required />
                     </div>
                 </div>
             </div>
         </div>
         <div
-            style="display: flex; flex-direction: column; background-color: rgb(250, 250, 250); width: 80vw; max-width: 1080px; padding: 16px 24px; border: 2px solid lightgray; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);">
-            <h2 style="margin: 4px 0px 12px 0px; font-family: Arial, Helvetica, sans-serif;">Data Orang Tua</h2>
-            <hr style="margin: 0px 0px 4px 0px; border: 0.5px solid lightgray;" />
+            style="display: flex; flex-direction: column; background-color: rgb(250, 250, 250); width: 80vw; max-width: 1080px; padding: 16px 24px; margin: 14px 0px; border: 2px solid lightgray; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);">
+            <h2 style="margin: 4px 0px 12px 0px; ">Data Orang Tua</h2>
+            <hr style="margin: 0px 0px 4px 0px; border: 2px solid #3498db; border-radius: 10px;" />
             <div style="margin: 4px 0px;">
                 <div style="display: flex; flex-wrap: wrap;">
                     <div style="display: flex; flex-direction: column; width: 240px; margin: 8px 24px 8px 0px;">
-                        <label style="font-family: Arial, Helvetica, sans-serif; margin: 0px 0px 8px 0px;"
-                            for="nama_ayah">Nama Ayah</label>
+                        <label style="height: 26px;" for="nama_ayah">Nama Ayah</label>
                         <input
-                            style="border: 1px solid slategray; border-radius: 4px; height: 26px; padding: 4px 8px; font-size: 16px; font-family: Arial, Helvetica, sans-serif;"
+                            style="border: 1px solid slategray; border-radius: 4px; height: 26px; padding: 4px 8px; font-size: 16px; "
                             type="text" name="nama_ayah" required />
                     </div>
 
                     <div style="display: flex; flex-direction: column; width: 240px; margin: 8px 24px 8px 0px;">
-                        <label style="font-family: Arial, Helvetica, sans-serif; margin: 0px 0px 8px 0px;"
-                            for="nama_ibu">Nama Ibu</label>
+                        <label style="height: 26px;" for="nama_ibu">Nama Ibu</label>
                         <input
-                            style="border: 1px solid slategray; border-radius: 4px; min-height: 20px; min-width: 220px; padding: 6px 10px; font-size: 16px; font-family: Arial, Helvetica, sans-serif;"
+                            style="border: 1px solid slategray; border-radius: 4px; min-height: 20px; min-width: 220px; padding: 6px 10px; font-size: 16px; "
                             type="text" name="nama_ibu" required />
                     </div>
                 </div>
                 <div style="display: flex; flex-wrap: wrap;">
                     <div style="display: flex; flex-direction: column; width: 240px; margin: 8px 24px 8px 0px">
-                        <label style="font-family: Arial, Helvetica, sans-serif; margin: 0px 0px 8px 0px;"
-                            for="pekerjaan_ayah">Pekerjaan Ayah</label>
+                        <label style="height: 26px;" for="pekerjaan_ayah">Pekerjaan Ayah</label>
                         <select
-                            style="border: 1px solid slategray; border-radius: 4px; min-height: 20px; min-width: 220px; padding: 6px 10px; font-size: 16px; font-family: Arial, Helvetica, sans-serif;"
+                            style="border: 1px solid slategray; border-radius: 4px; min-height: 20px; min-width: 220px; padding: 6px 10px; font-size: 16px; "
                             name="pekerjaan_ayah" required>
                             <option value="" disabled hidden selected>-</option>
                             <option value="tidak_bekerja">Tidak Bekerja</option>
@@ -128,10 +129,9 @@
                     </div>
 
                     <div style="display: flex; flex-direction: column; width: 240px; margin: 8px 24px 8px 0px">
-                        <label style="font-family: Arial, Helvetica, sans-serif; margin: 0px 0px 8px 0px;"
-                            for="pendidikan_ayah">Pendidikan Ayah</label>
+                        <label style="height: 26px;" for="pendidikan_ayah">Pendidikan Ayah</label>
                         <select
-                            style="border: 1px solid slategray; border-radius: 4px; min-height: 20px; min-width: 220px; padding: 6px 10px; font-size: 16px; font-family: Arial, Helvetica, sans-serif;"
+                            style="border: 1px solid slategray; border-radius: 4px; min-height: 20px; min-width: 220px; padding: 6px 10px; font-size: 16px; "
                             name="pendidikan_ayah" required>
                             <option value="" disabled hidden selected>-</option>
                             <option value="sd">SD</option>
@@ -145,10 +145,9 @@
                     </div>
 
                     <div style="display: flex; flex-direction: column; width: 240px; margin: 8px 24px 8px 0px">
-                        <label style="font-family: Arial, Helvetica, sans-serif; margin: 0px 0px 8px 0px;"
-                            for="penghasilan_ayah">Penghasilan Ayah</label>
+                        <label style="height: 26px;" for="penghasilan_ayah">Penghasilan Ayah</label>
                         <select
-                            style="border: 1px solid slategray; border-radius: 4px; min-height: 20px; min-width: 220px; padding: 6px 10px; font-size: 16px; font-family: Arial, Helvetica, sans-serif;"
+                            style="border: 1px solid slategray; border-radius: 4px; min-height: 20px; min-width: 220px; padding: 6px 10px; font-size: 16px; "
                             name="penghasilan_ayah" required>
                             <option value="" disabled hidden selected>-</option>
                             <option value="1">Kurang dari Rp 1.000.000</option>
@@ -162,10 +161,9 @@
                 </div>
                 <div style="display: flex; flex-wrap: wrap;">
                     <div style="display: flex; flex-direction: column; width: 240px; margin: 8px 24px 8px 0px">
-                        <label style="font-family: Arial, Helvetica, sans-serif; margin: 0px 0px 8px 0px;"
-                            for="pekerjaan_ibu">Pekerjaan Ibu</label>
+                        <label style="height: 26px;" for="pekerjaan_ibu">Pekerjaan Ibu</label>
                         <select
-                            style="border: 1px solid slategray; border-radius: 4px; min-height: 20px; min-width: 220px; padding: 6px 10px; font-size: 16px; font-family: Arial, Helvetica, sans-serif;"
+                            style="border: 1px solid slategray; border-radius: 4px; min-height: 20px; min-width: 220px; padding: 6px 10px; font-size: 16px; "
                             name="pekerjaan_ibu" required>
                             <option value="" disabled hidden selected>-</option>
                             <option value="tidak_bekerja">Tidak Bekerja</option>
@@ -179,10 +177,9 @@
                     </div>
 
                     <div style="display: flex; flex-direction: column; width: 240px; margin: 8px 24px 8px 0px">
-                        <label style="font-family: Arial, Helvetica, sans-serif; margin: 0px 0px 8px 0px;"
-                            for="pendidikan_ibu">Pendidikan Ibu</label>
+                        <label style="height: 26px;" for="pendidikan_ibu">Pendidikan Ibu</label>
                         <select
-                            style="border: 1px solid slategray; border-radius: 4px; min-height: 20px; min-width: 220px; padding: 6px 10px; font-size: 16px; font-family: Arial, Helvetica, sans-serif;"
+                            style="border: 1px solid slategray; border-radius: 4px; min-height: 20px; min-width: 220px; padding: 6px 10px; font-size: 16px; "
                             name="pendidikan_ibu" required>
                             <option value="" disabled hidden selected>-</option>
                             <option value="sd">SD</option>
@@ -196,10 +193,9 @@
                     </div>
 
                     <div style="display: flex; flex-direction: column; width: 240px; margin: 8px 24px 8px 0px">
-                        <label style="font-family: Arial, Helvetica, sans-serif; margin: 0px 0px 8px 0px;"
-                            for="penghasilan_ibu">Penghasilan Ibu</label>
+                        <label style="height: 26px;" for="penghasilan_ibu">Penghasilan Ibu</label>
                         <select
-                            style="border: 1px solid slategray; border-radius: 4px; min-height: 20px; min-width: 220px; padding: 6px 10px; font-size: 16px; font-family: Arial, Helvetica, sans-serif;"
+                            style="border: 1px solid slategray; border-radius: 4px; min-height: 20px; min-width: 220px; padding: 6px 10px; font-size: 16px; "
                             name="penghasilan_ibu" required>
                             <option value="" disabled hidden selected>-</option>
                             <option value="1">Kurang dari Rp 1.000.000</option>
@@ -213,28 +209,45 @@
                 </div>
                 <div>
                     <div style="display: flex; flex-direction: column; width: 240px; margin: 8px 24px 8px 0px;">
-                        <label style="font-family: Arial, Helvetica, sans-serif; margin: 0px 0px 8px 0px;"
-                            for="nama_ibu">Jumlah Tanggungan</label>
+                        <label style="height: 26px;" for="jml_tanggungan">Jumlah Tanggungan</label>
                         <input
-                            style="border: 1px solid slategray; border-radius: 4px; min-height: 20px; min-width: 220px; padding: 6px 10px; font-size: 16px; font-family: Arial, Helvetica, sans-serif;"
-                            type="number" name="nama_ibu" required />
+                            style="border: 1px solid slategray; border-radius: 4px; min-height: 20px; min-width: 220px; padding: 6px 10px; font-size: 16px; "
+                            type="number" name="jml_tanggungan" required />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            style="display: flex; flex-direction: column; background-color: rgb(250, 250, 250); width: 80vw; max-width: 1080px; padding: 16px 24px; margin: 14px 0px; border: 2px solid lightgray; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);">
+            <h2 style="margin: 4px 0px 12px 0px; ">Kebutuhan Khusus</h2>
+            <hr style="margin: 0px 0px 4px 0px; border: 2px solid #3498db; border-radius: 10px;" />
+            <div style="margin: 4px 0px;">
+                <div style="display: flex; flex-wrap: wrap;">
+                    <div style="display: flex; flex-direction: column; width: 240px; margin: 8px 24px 8px 0px">
+                        <div
+                            style="display: flex; align-items: center; margin: auto 0px; padding: 4px 0px; gap: 24px; height: 26px;">
+                            <div style="display: flex; gap: 8px;">
+                                <label for="kebutuhan_khusus">Tunanetra</label>
+                                <input style="margin: 0px;" type="checkbox" name="kebutuhan_khusus"
+                                    value="laki_laki" />
+                            </div>
+                            <div style="display: flex; gap: 8px;">
+                                <label for="kebutuhan_khusus">Tunadaksa</label>
+                                <input style="margin: 0px;" type="checkbox" name="kebutuhan_khusus"
+                                    value="perempuan" />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div style="display: flex; gap: 16px;">
-                <div style="margin: 8px 0px;">
-                    <input
-                        style="background-color: rgb(255, 117, 4); padding: 8px 20px; font-size: 16px; border: 0px; border-radius: 4px; color: white; font-family: Arial, Helvetica, sans-serif;"
-                        type="submit" />
-                </div>
-                <div style="margin: 8px 0px;">
-                    <a href="./home.html">
-                        <div
-                            style="background-color: red; padding: 8px 20px; font-size: 16px; border-radius: 4px; text-decoration: none; color: white; font-family: Arial, Helvetica, sans-serif;">
-                            Kembali</div>
-                    </a>
-                </div>
+            <div style="display: flex; gap: 16px; align-items: center; margin: 8px 0px;">
+                <input
+                    style="background-color: #3498db; padding: 8px 20px; font-size: 16px; border: 0px; border-radius: 4px; color: white; "
+                    type="submit" />
+                <a href="./home.html"
+                    style="background-color: #e74c3c; padding: 8px 20px; font-size: 16px; border-radius: 4px; text-decoration: none; color: white;">
+                    Kembali</a>
             </div>
         </div>
     </form>
