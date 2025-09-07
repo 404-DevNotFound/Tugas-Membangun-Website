@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Form Login</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body
     style="
@@ -11,31 +12,10 @@
       padding: 0;
     "
   >
-    <h1 style="text-align: center; margin-top: 50px; color: #2c3e50">
-      Silahkan Login Terlebih Dahulu
-    </h1>
+    <h1 class="h1">Silahkan Login Terlebih Dahulu</h1>
 
-    <fieldset
-      style="
-        width: 350px;
-        margin: 40px auto;
-        background-color: #fff;
-        border: 2px solid #ddd;
-        border-radius: 12px;
-        padding: 20px 30px;
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-      "
-    >
-      <legend
-        style="
-          font-size: 1.5rem;
-          font-weight: bold;
-          text-align: center;
-          color: #3498db;
-        "
-      >
-        Form Login
-      </legend>
+    <fieldset class="fieldset">
+      <legend class="legend">Form Login</legend>
 
       <img
         src="source/akun.png"
@@ -44,61 +24,28 @@
       />
 
       <form style="display: flex; flex-direction: column" action="home.html">
-        <label
-          for="uname"
-          style="margin: 10px 0 5px; font-weight: bold; color: #333"
-          >Username:</label
-        >
+        <label for="uname" class="label">Username:</label>
         <input
           type="text"
           name="uname"
           placeholder="Masukkan username"
-          style="
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            font-size: 14px;
-          "
+          class="input"
           required
         />
 
-        <label
-          for="psw"
-          style="margin: 15px 0 5px; font-weight: bold; color: #333"
-          >Password:</label
-        >
+        <label for="psw" class="label">Password:</label>
         <input
           type="password"
           name="psw"
           placeholder="Masukkan password"
-          style="
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            font-size: 14px;
-          "
+          class="input"
           required
         />
 
         <a
           href="home.html"
           style="text-decoration: none; color: white; display: block"
-          ><button
-            type="submit"
-            style="
-              cursor: pointer;
-              background-color: #3498db;
-              border: none;
-              padding: 12px;
-              font-weight: bold;
-              color: white;
-              border-radius: 6px;
-              margin-top: 20px;
-              font-size: 16px;
-            "
-          >
-            Login
-          </button>
+          ><button type="submit" class="button">Login</button>
         </a>
       </form>
 
@@ -111,12 +58,7 @@
         "
       >
         Belum punya akun?
-        <a
-          href="formregister.html"
-          style="color: #3498db; text-decoration: none; font-weight: bold"
-        >
-          Daftar sekarang
-        </a>
+        <a href="formregister.html" class="link"> Daftar sekarang </a>
       </p>
     </fieldset>
   </body>
