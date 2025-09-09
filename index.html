@@ -23,14 +23,18 @@
         style="width: 100px; display: block; margin: 15px auto"
       />
 
-      <form style="display: flex; flex-direction: column" action="home.html">
+      <form
+        style="display: flex; flex-direction: column"
+        action="home.html"
+        id="login"
+        onsubmit="return validateForm()"
+      >
         <label for="uname" class="label">Username:</label>
         <input
           type="text"
           name="uname"
           placeholder="Masukkan username"
           class="input"
-          required
         />
 
         <label for="psw" class="label">Password:</label>
@@ -39,14 +43,10 @@
           name="psw"
           placeholder="Masukkan password"
           class="input"
-          required
+          id="password"
         />
 
-        <a
-          href="home.html"
-          style="text-decoration: none; color: white; display: block"
-          ><button type="submit" class="button">Login</button>
-        </a>
+        <button type="submit" class="button" id="login-button">Login</button>
       </form>
 
       <p
@@ -61,5 +61,6 @@
         <a href="formregister.html" class="link"> Daftar sekarang </a>
       </p>
     </fieldset>
+    <script src="script.js"></script>
   </body>
 </html>

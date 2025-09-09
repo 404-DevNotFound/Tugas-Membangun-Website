@@ -17,13 +17,16 @@
     <fieldset class="fieldset">
       <legend class="legend">Form Register</legend>
 
-      <form style="display: flex; flex-direction: column" action="index.html">
+      <form
+        style="display: flex; flex-direction: column"
+        action="index.html"
+        onsubmit="return validateForm()"
+      >
         <label for="email" class="label">Email:</label>
         <input
           type="email"
           placeholder="Masukkan username"
           name="email"
-          required
           class="input"
         />
 
@@ -32,8 +35,8 @@
           type="text"
           placeholder="Masukkan username"
           name="uname"
-          required
           class="input"
+          id="username"
         />
 
         <label for="psw" class="label">Password:</label>
@@ -41,15 +44,13 @@
           type="password"
           placeholder="Masukkan password"
           name="psw"
-          required
           class="input"
+          id="password"
         />
 
-        <a
-          href="index.html"
-          style="text-decoration: none; color: white; display: block"
-          ><button type="submit" class="button">Buat Akun</button>
-        </a>
+        <button type="submit" class="button" id="login-button">
+          Buat Akun
+        </button>
       </form>
 
       <p
@@ -64,5 +65,6 @@
         <a href="index.html" class="link"> Login di sini </a>
       </p>
     </fieldset>
+    <script src="script.js"></script>
   </body>
 </html>

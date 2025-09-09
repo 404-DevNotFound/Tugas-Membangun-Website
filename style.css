@@ -81,7 +81,8 @@ body {
   flex-direction: column;
 }
 
-.form-pendaftaran > h1, .form-pendaftaran > h2 {
+.form-pendaftaran > h1,
+.form-pendaftaran > h2 {
   text-align: center;
   margin: 0px 0px 10px 0px;
 }

@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <title>Home</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body
     style="
@@ -48,7 +49,7 @@
           display: inline-block;
           margin: 10px;
           padding: 10px 20px;
-          background-color: #3498db;
+          background-color: red;
           color: white;
           text-decoration: none;
           border-radius: 6px;
@@ -58,20 +59,17 @@
       >
 
       <!-- Tombol Logout -->
-      <a
-        href="index.html"
-        style="
-          display: inline-block;
-          margin: 10px;
-          padding: 10px 20px;
-          background-color: #e74c3c;
-          color: white;
-          text-decoration: none;
-          border-radius: 6px;
-          font-size: 16px;
-        "
-        >Logout</a
-      >
+      <button type="button" id="logout-button" class="button">Logout</button>
     </fieldset>
+    <script>
+      const logoutButton = document.getElementById("logout-button");
+
+      logoutButton.addEventListener("click", function () {
+        const konfirmasi = confirm("Apakah Anda yakin ingin logout?");
+        if (konfirmasi) {
+          window.location.href = "index.html";
+        }
+      });
+    </script>
   </body>
 </html>
