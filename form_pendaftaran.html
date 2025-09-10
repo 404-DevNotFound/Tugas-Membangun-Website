@@ -10,39 +10,53 @@
 
 <body class="form-pendaftaran">
     <h1>Pendaftaran Ujian Seleksi Perguruan Tinggi</h1>
-    <form action="form_submitted.html" method="GET">
+    <form id="form_pendaftaran" action="form_submitted.html" method="GET">
+        <div class="card">
+            <h2>Pas Foto</h2>
+            <hr />
+            <div class="content-group flex-row">
+                <div>
+                    <div class="input">
+                        <img id="preview-pas-foto" src="">
+                        <input id="input-pas-foto" class="input-file" type="file" name="pasfoto" accept="image/*"
+                            onchange="RefreshPasFoto()" required />
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
         <div class="card">
             <h2>Biodata Pribadi</h2>
             <hr />
-            <div class="content-group">
+            <div class="content-group flex-column">
                 <div>
                     <div class="input">
-                        <label for="nama">Nama Lengkap</label>
+                        <label class="input-label" for="nama">Nama Lengkap</label>
                         <input class="input-text" type="text" name="nama" required />
                     </div>
 
                     <div class="input">
-                        <label for="nik">NIK</label>
+                        <label class="input-label" for="nik">NIK</label>
                         <input class="input-text" type="text" name="nik" required />
                     </div>
 
                     <div class="input">
-                        <label for="nisn">NISN</label>
+                        <label class="input-label" for="nisn">NISN</label>
                         <input class="input-text" type="text" name="nisn" required />
                     </div>
 
                     <div class="input">
-                        <label for="tempat_lahir">Tempat Lahir</label>
+                        <label class="input-label" for="tempat_lahir">Tempat Lahir</label>
                         <input class="input-text" type="text" name="tempat_lahir" required />
                     </div>
 
                     <div class="input">
-                        <label for="tanggal_lahir">Tanggal Lahir</label>
+                        <label class="input-label" for="tanggal_lahir">Tanggal Lahir</label>
                         <input class="input-date" type="date" name="tanggal_lahir" required />
                     </div>
 
                     <div class="input">
-                        <label for="jenis_kelamin">Jenis Kelamin</label>
+                        <label class="input-label" for="jenis_kelamin">Jenis Kelamin</label>
                         <div class="checkbox-radio-group">
                             <div>
                                 <label for="jenis_kelamin">Laki-laki</label>
@@ -58,15 +72,8 @@
 
                 <div>
                     <div class="input">
-                        <label for="alamat">Alamat</label>
+                        <label class="input-label" for="alamat">Alamat</label>
                         <textarea class="input-textarea" name="alamat" required></textarea>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="input">
-                        <label for="pasfoto">Pas Foto</label>
-                        <input class="input-file" type="file" name="pasfoto" accept="image/*" required />
                     </div>
                 </div>
             </div>
@@ -74,21 +81,21 @@
         <div class="card">
             <h2>Data Orang Tua</h2>
             <hr />
-            <div class="content-group">
+            <div class="content-group flex-column">
                 <div>
                     <div class="input">
-                        <label for="nama_ayah">Nama Ayah</label>
+                        <label class="input-label" for="nama_ayah">Nama Ayah</label>
                         <input class="input-text" type="text" name="nama_ayah" required />
                     </div>
 
                     <div class="input">
-                        <label for="nama_ibu">Nama Ibu</label>
+                        <label class="input-label" for="nama_ibu">Nama Ibu</label>
                         <input class="input-text" type="text" name="nama_ibu" required />
                     </div>
                 </div>
                 <div class="content-group">
                     <div class="input">
-                        <label for="pekerjaan_ayah">Pekerjaan Ayah</label>
+                        <label class="input-label" for="pekerjaan_ayah">Pekerjaan Ayah</label>
                         <select class="input-select" name="pekerjaan_ayah" required>
                             <option value="" disabled hidden selected>-</option>
                             <option value="tidak_bekerja">Tidak Bekerja</option>
@@ -102,7 +109,7 @@
                     </div>
 
                     <div class="input">
-                        <label for="pendidikan_ayah">Pendidikan Ayah</label>
+                        <label class="input-label" for="pendidikan_ayah">Pendidikan Ayah</label>
                         <select class="input-select" name="pendidikan_ayah" required>
                             <option value="" disabled hidden selected>-</option>
                             <option value="sd">SD</option>
@@ -116,7 +123,7 @@
                     </div>
 
                     <div class="input">
-                        <label for="penghasilan_ayah">Penghasilan Ayah</label>
+                        <label class="input-label" for="penghasilan_ayah">Penghasilan Ayah</label>
                         <select class="input-select" name="penghasilan_ayah" required>
                             <option value="" disabled hidden selected>-</option>
                             <option value="1">Kurang dari Rp 1.000.000</option>
@@ -130,7 +137,7 @@
                 </div>
                 <div class="content-group">
                     <div class="input">
-                        <label for="pekerjaan_ibu">Pekerjaan Ibu</label>
+                        <label class="input-label" for="pekerjaan_ibu">Pekerjaan Ibu</label>
                         <select class="input-select" name="pekerjaan_ibu" required>
                             <option value="" disabled hidden selected>-</option>
                             <option value="tidak_bekerja">Tidak Bekerja</option>
@@ -144,7 +151,7 @@
                     </div>
 
                     <div class="input">
-                        <label for="pendidikan_ibu">Pendidikan Ibu</label>
+                        <label class="input-label" for="pendidikan_ibu">Pendidikan Ibu</label>
                         <select class="input-select" name="pendidikan_ibu" required>
                             <option value="" disabled hidden selected>-</option>
                             <option value="sd">SD</option>
@@ -158,7 +165,7 @@
                     </div>
 
                     <div class="input">
-                        <label for="penghasilan_ibu">Penghasilan Ibu</label>
+                        <label class="input-label" for="penghasilan_ibu">Penghasilan Ibu</label>
                         <select class="input-select" name="penghasilan_ibu" required>
                             <option value="" disabled hidden selected>-</option>
                             <option value="1">Kurang dari Rp 1.000.000</option>
@@ -172,7 +179,7 @@
                 </div>
                 <div>
                     <div class="input">
-                        <label for="jml_tanggungan">Jumlah Tanggungan</label>
+                        <label class="input-label" for="jml_tanggungan">Jumlah Tanggungan</label>
                         <input class="input-text" type="number" name="jml_tanggungan" required />
                     </div>
                 </div>
@@ -181,7 +188,7 @@
         <div class="card">
             <h2>Kebutuhan Khusus</h2>
             <hr />
-            <div class="content-group">
+            <div class="content-group flex-column">
                 <div>
                     <div class="input">
                         <div class="checkbox-radio-group">
@@ -199,12 +206,37 @@
             </div>
 
             <div class="button-group">
-                <input class="input-submit" type="submit" />
-                <a class="button" href="./home.html" style="background-color: #e74c3c;">
-                    Kembali</a>
+                <!-- <input class="input-submit" type="submit"> -->
+                <input onclick="ConfirmationSubmit()" class="input-submit" type="submit">
+                <a class="button" href="./home.html" style="background-color: #e74c3c;">Kembali</a>
             </div>
         </div>
     </form>
 </body>
 
 </html>
+
+<script>
+    var inputPasFoto = document.getElementById("input-pas-foto");
+    var previewPasFoto = document.getElementById("preview-pas-foto");
+    var formDaftar = document.getElementById("form_pendaftaran");
+
+    function RefreshPasFoto() {
+        var file = inputPasFoto.files[0];
+        if (file)
+            previewPasFoto.src = URL.createObjectURL(file);
+    }
+
+    function ConfirmationSubmit() {
+        var validity = formDaftar.checkValidity()
+        if (!validity) return;
+
+        var confirmation = confirm("Apakah data yang Anda isikan sudah benar?")
+        if (!confirmation) {
+            event.preventDefault();
+            return alert("konfirmasi dibatalkan!")        
+        }
+
+        formDaftar.submit();
+    }
+</script>
